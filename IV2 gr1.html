@@ -1,0 +1,117 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title> Kupovina Prodaja </title>
+	<style>
+		body {
+    font-family: Helvetica, sans-serif;
+    padding: 5%;
+    text-align: center;
+    font-size: 35;
+}
+
+/* Styling the area of the slides */
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+}
+
+/* Style each of the sides 
+  with a fixed width and height */
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(728px * 4);
+
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 10s ease infinite;
+}
+
+/* Set the background color
+  of each of the slides */
+.slide:nth-child(1) {
+    background: green;
+}
+
+.slide:nth-child(2) {
+    background: pink;
+}
+
+.slide:nth-child(3) {
+    background: red;
+}
+
+.slide:nth-child(4) {
+    background: yellow;
+}
+
+/* Define the animation 
+  for the slideshow */
+@keyframes slide {
+
+    /* Calculate the margin-left for 
+    each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+}
+	</style>
+	</head>
+<body>
+	<div>
+		<header >
+			<img src="logo-big.png" alt="Logo veliki"/>
+			<input type="text" placeholder="Pretraži"/><input type="submit" value="Pretraga"/>
+		</header>
+		<nav class="Nav">
+			<a class="Nav" href="index.html"> Naslovna </a>
+			i ostali linkovi za kategorije
+		</nav>
+		<main>
+			<section id="slogan sajta">
+			 <h1 id="slogan">Trgujte sa nama!</h1>
+			</section>
+			<section id="slide-show">
+			   slide show 
+        
+			</section>
+			<section id="recenzije">
+			   <img src="korisnik.png" alt="Korisnik  "/>Ime Korisnika
+				<p>	Prodao sam motokultivator, 7 godina star, za 5 minuta! </p>
+			</section>
+		</main>
+		<footer>
+			<img src="logo-small.png" alt="Logo mali"/>
+
+			
+			<p>kontakt </p>
+			<p>adresa</p>
+			<a href="https://instagram.com/kupovinaprodaja"> <img src="insta-logo.png" alt="instagram logo"></a>
+			
+		</footer>
+	</div>
+</body>
+</html>
